@@ -1,24 +1,20 @@
 package com.example.thiag.alarmclock;
 
 import android.app.AlarmManager;
-import android.app.NotificationChannel;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
 import android.widget.Toast;
-import java.time.Clock;
 import java.util.Calendar;
-import static java.util.Calendar.AM;
-import static java.util.Calendar.HOUR_OF_DAY;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -169,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
 
         long currentTimeMillis = System.currentTimeMillis(); // declarou o tempo atual como long e pegou do sistema
 
-        long nextTimeMillis = (currentTimeMillis + 5 * DateUtils.MINUTE_IN_MILLIS); // declarou o tempo de soneca como proximo alarme ou next time +5 min
+        long nextTimeMillis = (currentTimeMillis + 10 * DateUtils.MINUTE_IN_MILLIS); // declarou o tempo de soneca como proximo alarme ou next time +5 min
 
         calendar.setTimeInMillis(nextTimeMillis);// Chamou a classe do calendario e setou o tempo do proximo alarme;
 

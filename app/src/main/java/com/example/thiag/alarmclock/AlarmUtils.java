@@ -1,14 +1,13 @@
 package com.example.thiag.alarmclock;
 
-import android.app.Activity;
+
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import java.util.Calendar;
-import java.util.concurrent.atomic.AtomicLongArray;
+
 
 
 /**
